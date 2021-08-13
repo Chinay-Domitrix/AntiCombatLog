@@ -1,15 +1,19 @@
 name: AntiCombatLog
-version: ${project.version}
+version: '${project.version}'
 main: net.badbird5907.anticombatlog.AntiCombatLog
 api-version: 1.17
-depend: [ Citizens ]
+depend:
+  - Citizens
 softdepend:
   - floodgate
 commands:
   anticombatlog:
     description: main command
-    aliases: [combat,combatlog]
+    aliases:
+      - combat
+      - combatlog
   resettag:
     description: reset combat tag
-    aliases: [resetcombattag]
+    aliases:
+      - resetcombattag
     permission: anticombatlog.command.resettag
